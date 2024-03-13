@@ -3,7 +3,7 @@ import { csvToJson } from '../utils/functions.js'
 const BASE_URL = 'https://echo-serv.tbxnet.com/v1/secret'
 const API_KEY = 'Bearer aSuperSecretKey'
 
-const getFileContent = async (fileName) => {
+export const getFileContent = async (fileName) => {
   try {
     const response = await fetch(`${BASE_URL}/file/${fileName}`, {
       headers: { Authorization: API_KEY }
