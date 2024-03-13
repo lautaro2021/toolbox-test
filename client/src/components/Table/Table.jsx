@@ -30,6 +30,7 @@ const FileListRow = ({ file }) => {
 }
 
 function TableComponent({ filesData }) {
+  /*eslint-disable-next-line*/
   const { error } = useSelector(state => state);
 
   if (error) {

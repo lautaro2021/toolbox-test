@@ -7,7 +7,9 @@ import ListButton from './components/Button/ListButton';
 import DetailedFilesButton from './components/Button/DetailedFilesButton';
 
 function App() {
+  /*eslint-disable-next-line*/
   const { data, loading } = useSelector((state) => state);
+
   const fetchFunction = useFetch('/data')
 
   useEffect(() => {
