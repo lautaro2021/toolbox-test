@@ -5,17 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "standard && mocha --recursive src/tests/test.js",
+    "test": "standard && mocha src/tests/**/*.js",
     "start": "node src/index.js",
     "dev": "standard --fix && nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^5.1.0",
+    "chai": "^4.3.6",
     "express": "^4.18.3",
-    "mocha": "^10.3.0",
-    "standard": "^17.1.0"
+    "mocha": "^9.2.2",
+    "standard": "^16.0.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

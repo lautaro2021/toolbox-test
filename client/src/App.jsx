@@ -1,10 +1,10 @@
-import './styles/App.css'
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import useFetch from './hooks/useFetch';
 import TableComponent from './components/Table/Table';
 import ListButton from './components/Button/ListButton';
 import DetailedFilesButton from './components/Button/DetailedFilesButton';
+import './styles/App.css'
 
 function App() {
   /*eslint-disable-next-line*/

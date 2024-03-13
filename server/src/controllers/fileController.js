@@ -1,4 +1,4 @@
-import { showFiles, getFilesList } from '../services/service.js'
+import { showFiles, getFilesList } from '../services/fileService.js'
 
 export const getFiles = async (req, res) => {
   const { fileName } = req.query
