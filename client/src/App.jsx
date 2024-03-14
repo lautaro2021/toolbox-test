@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import useFetch from './hooks/useFetch';
 import TableComponent from './components/Table/Table';
-import ListButton from './components/Button/ListButton';
-import DetailedFilesButton from './components/Button/DetailedFilesButton';
+import ButtonComponent from './components/Button/Button';
 import './styles/App.css'
 
 function App() {
@@ -26,8 +25,12 @@ function App() {
         {loading ? <div>Loading..</div> : <TableComponent filesData={data} />}
       </section>
       <footer className='footer'>
-        <ListButton />
-        <DetailedFilesButton />
+        <ButtonComponent url={'/list'} variant='secondary'>
+          <span>View list of files</span>
+        </ButtonComponent>
+        <ButtonComponent url={'/data'} variant='primary'>
+          <span>View files</span>
+        </ButtonComponent>
       </footer>
     </div>
   );

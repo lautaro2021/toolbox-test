@@ -1,21 +1,14 @@
 -------------------------------------------
 #
-# SERVER
+# SERVER - NODE 14
 #
 
 Librerias y frameworks utilizados:
 # Express
 # Mocha
 # Chai
+# Chai - http
 # Standard
-
-app.js => Configuracion del servidor (ruteo y CORS)
-index.js => Server up
-route.js => Rutas habilitadas de la API
-controller.js => Manejar solicitudes HTTP
-service.js => Aplicar logica de negocio
-test.js => Tests
-
 
 RUTAS
 
@@ -30,12 +23,16 @@ RUTAS
 
 
 TEST:
-    Ejecutando RUN TEST se puede testear la logica utilizada en los servicios.
+    Ejecutando RUN TEST se puede testear la logica utilizada tanto en los servicios como en el controlador.
+
+
+UTILS:
+    En la carpeta utils se encuentran las funciones de utilidad que fueron utilizadas tanto para realizar las peticiones como para formatear los archivos de CSV a JSON.
 
 
 ---------------------------------------------
 #
-#  CLIENT
+#  CLIENT - NODE 16
 #
 
 Librerias y frameworks utilizados:
@@ -58,3 +55,6 @@ FUNCIONAMIENTO DEL CUSTOM HOOK:
 REDUX:
     La implementacion de redux se realiza mediante acciones y reducers. Hay 3 acciones creadas correspondientes para cada estado de la peticion (success, error, loading).
     Estas acciones son utilizadas dentro del reducer para modificar el estado inicial de la aplicacion dependiendo del tipo de accion ejecutada.
+
+TEST:
+    Se testea con una version reducida de datos que la tabla funcione correctamente para los tres conjuntos de datos.

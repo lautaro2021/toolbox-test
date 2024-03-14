@@ -7,4 +7,6 @@ module.exports = {
 
   // Configuración de los resultados de las pruebas
   verbose: true,
+
+  testEnvironment: 'jsdom',
 };

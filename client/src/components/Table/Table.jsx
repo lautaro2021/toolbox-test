@@ -2,7 +2,6 @@ import React from 'react'
 import { Table } from 'react-bootstrap';
 import useFetch from '../../hooks/useFetch';
 import { useSelector } from 'react-redux';
-import './table.css'
 
 const FileDataRow = ({ file, lines }) => {
   return lines.map(line => (
