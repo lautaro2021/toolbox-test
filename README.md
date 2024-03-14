@@ -1,14 +1,12 @@
 -------------------------------------------
-#
 # SERVER - NODE 14
-#
 
 Librerias y frameworks utilizados:
-# Express
-# Mocha
-# Chai
-# Chai - http
-# Standard
+- Express
+- Mocha
+- Chai
+- Chai - http
+- Standard
 
 RUTAS
 
@@ -31,14 +29,12 @@ UTILS:
 
 
 ---------------------------------------------
-#
 #  CLIENT - NODE 16
-#
 
 Librerias y frameworks utilizados:
-# React
-# Redux
-# React bootstrap
+- React
+- Redux
+- React bootstrap
 
 FUNCIONAMIENTO:
     Mediante el custom hook useFetch se realizan las peticiones correspondientes a la API local.
